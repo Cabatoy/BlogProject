@@ -43,22 +43,22 @@ namespace BlogSolution.Data.Concrete.EntityFramework.Mapping
             builder.ToTable("Users");
             builder.HasData(new User
             {
-                Id=1,
+                Id = 1,
                 RoleId = 1,
-                FirstName ="Cahatay",
-                LastName="Ozdemir",
-                Email="ahaozde@dfds.com",
-               
+                FirstName = "Cahatay",
+                LastName = "Ozdemir",
+                Email = "ahaozde@dfds.com",
+                UserName = "Scaramucci",
                 CreatedDate = DateTime.Now,
                 IsActive = true,
                 IsDeleted = false,
                 ModifiedByName = "Admin",
                 ModifiedDate = DateTime.Now,
                 CreatedByName = "Admin",
-                Description ="ilk Kullanici",
-                Note="Test",
-               
-                PasswordHash= Encoding.ASCII.GetBytes("085481314207ef178e84a59227d2f960")
+                Description = "ilk Kullanici",
+                Note = "Test",
+                Picture = "https://www.donanimhaber.com/images/images/haber/150460/1400x1050yeni-terminator-oyunu-duyuruldu.jpg",
+                PasswordHash = Encoding.ASCII.GetBytes("085481314207ef178e84a59227d2f960")
 
             });
 
